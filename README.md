@@ -16,12 +16,10 @@ are described below.
 Transcripts were quantified by genomic alignments using HISAT2 (version
 2.2.1) \[[1](#ref-kim2019)\] and featureCounts (version 2.0.6)
 \[[2](#ref-liao2013)\], and by transcript classification using Salmon
-(version 1.10.3) \[[3](#ref-srivastava2020)\].
+(version 1.10.3) \[[3](#ref-srivastava2020)\]. \### HISAT2
 
 Tables S1-3 contain the gene counts from the HISAT2 alignments estimated
 by featureCounts.
-
-### HISAT2
 
                      File                                    
                    ──────────────────────────────────────────
