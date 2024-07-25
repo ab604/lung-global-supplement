@@ -8,8 +8,8 @@ This repository contains the supplementary tables as `csv` files for
 reveals distinct molecular signatures between two non-small cell lung
 cancer subtypes**
 
-The column names and contents of the `csv` files are described in the
-tables below.
+The column names and contents of the `csv` files in the `tables` folder
+are described below.
 
 ## Transcript quantification and gene counts
 
@@ -24,9 +24,11 @@ by featureCounts.
 ### HISAT2
 
                      File                                    
+                   ──────────────────────────────────────────
                      Table-S1-Hisat-LUAD-vs-PBMC-counts.csv  
                      Table-S2-Hisat-LUSC-vs-PBMC-counts.csv  
                      Table-S3-Hisat-LUSC-vs-LUAD-counts.csv  
+                   ──────────────────────────────────────────
 
 Column names: File
 
@@ -44,9 +46,11 @@ Tables S4-6 contain the gene counts from transcript classification by
 Salmon.
 
                     File                                     
+                  ───────────────────────────────────────────
                     Table-S4-Salmon-LUAD-vs-PBMC-counts.csv  
                     Table-S5-Salmon-LUSC-vs-PBMC-counts.csv  
                     Table-S6-Salmon-LUSC-vs-LUAD-counts.csv  
+                  ───────────────────────────────────────────
 
 Column names: File
 
@@ -69,9 +73,11 @@ both HISAT2 and Salmon counts
 Tables S7-9 contain the edgeR outputs.
 
                       File                                 
+                    ───────────────────────────────────────
                       Table-S7-edgeR-DEG-LUAD-vs-PBMC.csv  
                       Table-S8-edgeR-DEG-LUSC-vs-PBMC.csv  
                       Table-S9-edgeR-DEG-LUSC-vs-LUAD.csv  
+                    ───────────────────────────────────────
 
 Column names: File
 
@@ -102,9 +108,11 @@ intensities.
 Tables S10-12 contain normalised top 3 peptide intensities.
 
            File                                                        
+         ──────────────────────────────────────────────────────────────
            Table-S10-Peaks-top3-peptides-intensities-LUAD-vs-NAT.csv   
            Table-S11-Peaks-top3-peptides-intensities-LUSC-vs-NAT.csv   
            Table-S12-Peaks-top3-peptides-intensities-LUSC-vs-LUAD.csv  
+         ──────────────────────────────────────────────────────────────
 
 Column names: File
 
@@ -126,9 +134,11 @@ DEqMS using the default steps (“DEqMS,” n.d.).
 Tables S13-15 contain the outputs of DEqMS.
 
                       File                                  
+                    ────────────────────────────────────────
                       Table-S13-DEqMS-DEP-LUAD-vs-NAT.csv   
                       Table-S14-DEqMS-DEP-LUSC-vs-NAT.csv   
                       Table-S15-DEqMS-DEP-LUSC-vs-LUAD.csv  
+                    ────────────────────────────────────────
 
 Column names: File
 
@@ -159,6 +169,7 @@ protein ids for DEPs.
 Tables S16-23 contain the g:Profiler outputs.
 
                     File                                      
+                  ────────────────────────────────────────────
                     Table-S16-gprofiler-DEG-LUAD-vs-PBMC.csv  
                     Table-S17-gprofiler-DEG-LUSC-vs-PBMC.csv  
                     Table-S18-gprofiler-DEG-LUAD-vs-LUSC.csv  
@@ -167,6 +178,7 @@ Tables S16-23 contain the g:Profiler outputs.
                     Table-S21-gprofiler-DEP-LUSC-vs-NAT.csv   
                     Table-S22-gprofiler-DEP-LUAD-vs-LUSC.csv  
                     Table-S23-gprofiler-DEP-LUSC-vs-LUAD.csv  
+                  ────────────────────────────────────────────
 
 Column names: File
 
