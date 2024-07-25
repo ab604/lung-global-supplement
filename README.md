@@ -1,11 +1,27 @@
 
 Last Updated on 2024-07-25
 
-# Comparative analysis of transcriptomic and proteomic expression reveals distinct molecular signatures between two non-small cell lung cancer subtypes: Supplementary Material
+# Supplementary Material
 
-## Gene counts
+This repository contains the supplementary tables as `csv` files for
+**Comparative analysis of transcriptomic and proteomic expression
+reveals distinct molecular signatures between two non-small cell lung
+cancer subtypes**
 
-### Hisat2
+The column names and contents of the `csv` files are described in the
+tables below.
+
+## Transcript quantification and gene counts
+
+Transcripts were quantified by genomic alignments using HISAT2 (version
+2.2.1) (Kim et al. 2019) and featureCounts (version 2.0.6) (Liao, Smyth,
+and Shi 2013), and by transcript classification using Salmon (version
+1.10.3) (Srivastava et al. 2020).
+
+Tables S1-3 contain the gene counts from the HISAT2 alignments estimated
+by featureCounts.
+
+### HISAT2
 
                      File                                    
                      Table-S1-Hisat-LUAD-vs-PBMC-counts.csv  
@@ -20,9 +36,12 @@ Column names: File
 | `gene` | HGNC gene symbol |
 | `sample_id` the donor id or donor id suffixed with `T` for tumour or `N` for PBMC samples. | mapped read counts from featureCounts |
 
-Hisat2 Counts Tables Information
+HISAT2 Counts Tables Information
 
 ### Salmon
+
+Tables S4-6 contain the gene counts from transcript classification by
+Salmon.
 
                     File                                     
                     Table-S4-Salmon-LUAD-vs-PBMC-counts.csv  
@@ -40,12 +59,14 @@ Column names: File
 
 Salmon Counts Table Information
 
-## EdgeR
+## Differential gene expression with EdgeR
 
-Robinson, McCarthy, and Smyth (2009)
+Differential gene expression (DEG) was estimated using EdgeR and default
+settings (Yunshun Chen , Aaron Lun, Davis McCarthy , Xiaobei Zhou , Mark
+Robinson, Gordon Smyth 2017). Results were filtered for common DEG from
+both HISAT2 and Salmon counts
 
-Tables S7-9. These results were filtered for common genes DE from both
-Salmon and Hisat2 counts:
+Tables S7-9 contain the edgeR outputs.
 
                       File                                 
                       Table-S7-edgeR-DEG-LUAD-vs-PBMC.csv  
@@ -73,7 +94,12 @@ edgeR Table information
 
 ## Peaks normalised Top 3 peptide intensities
 
-Tables S10-12
+Label free quantification using the Peaks Q module of Peaks Studio
+(Zhang et al. 2012; Lin, He, and Ma 2013) yielding matrices of protein
+identifications as quantified by their normalised top 3 peptide
+intensities.
+
+Tables S10-12 contain normalised top 3 peptide intensities.
 
            File                                                        
            Table-S10-Peaks-top3-peptides-intensities-LUAD-vs-NAT.csv   
@@ -88,11 +114,16 @@ Column names: File
 | `gene` | HGNC gene symbol |
 | `sample_id` the donor id or donor id suffixed with `T` for tumour or `N` for NAT samples | Normalised top 3 peptide intensity from Peaks |
 
-Peaks normalised Top 3 peptide intensities Table information
+Peaks normalised top 3 peptide intensities Table information
 
-## DEqMS
+## Differential protein expression with DEqMS
 
-Tables S13-15 “DEqMS” (n.d.)
+The normalised top 3 peptide intensities were filtered to remove any
+proteins for which there were more than two missing values across the
+samples. Differential protein expression (DEP) was then calculated with
+DEqMS using the default steps (“DEqMS,” n.d.).
+
+Tables S13-15 contain the outputs of DEqMS.
 
                       File                                  
                       Table-S13-DEqMS-DEP-LUAD-vs-NAT.csv   
@@ -118,9 +149,14 @@ Column names: File
 
 DEqMS Table information
 
-## g:Profiler
+## Functional analysis with g:Profiler
 
-Tables S16-23 Liis Kolberg (2019)
+Functional enrichment analysis used g:Profiler (Kolberg et al. 2020)
+using default settings for homo sapiens modified to exclude GO
+electronic annotations. Gene ids were used as inputs for DEGs and
+protein ids for DEPs.
+
+Tables S16-23 contain the g:Profiler outputs.
 
                     File                                      
                     Table-S16-gprofiler-DEG-LUAD-vs-PBMC.csv  
@@ -226,10 +262,36 @@ g:Profiler Table information
 
 “DEqMS.” n.d. <http://bioconductor.org/packages/DEqMS/>.
 
-Liis Kolberg, Uku Raudvere. 2019. “Gprofiler2: Interface to the
-’g:profiler’ Toolset.” <https://biit.cs.ut.ee/gprofiler/page/r>.
+Kim, Daehwan, Joseph M. Paggi, Chanhee Park, Christopher Bennett, and
+Steven L. Salzberg. 2019. “Graph-Based Genome Alignment and Genotyping
+with HISAT2 and HISAT-Genotype.” *Nature Biotechnology* 37 (8): 907–15.
+<https://doi.org/10.1038/s41587-019-0201-4>.
 
-Robinson, Mark D., Davis J. McCarthy, and Gordon K. Smyth. 2009. “edgeR:
-A Bioconductor Package for Differential Expression Analysis of Digital
-Gene Expression Data.” *Bioinformatics* 26 (1): 139–40.
-<https://doi.org/10.1093/bioinformatics/btp616>.
+Kolberg, Liis, Uku Raudvere, Ivan Kuzmin, Jaak Vilo, and Hedi Peterson.
+2020. “Gprofiler2 – an R Package for Gene List Functional Enrichment
+Analysis and Namespace Conversion Toolset g:Profiler.” *F1000Research* 9
+(November): 709. <https://doi.org/10.12688/f1000research.24956.2>.
+
+Liao, Yang, Gordon K. Smyth, and Wei Shi. 2013. “featureCounts: An
+Efficient General Purpose Program for Assigning Sequence Reads to
+Genomic Features.” *Bioinformatics* 30 (7): 923–30.
+<https://doi.org/10.1093/bioinformatics/btt656>.
+
+Lin, Hao, Lin He, and Bin Ma. 2013. “A Combinatorial Approach to the
+Peptide Feature Matching Problem for Label-Free Quantification.”
+*Bioinformatics* 29 (14): 1768–75.
+<https://doi.org/10.1093/bioinformatics/btt274>.
+
+Srivastava, Avi, Laraib Malik, Hirak Sarkar, and Rob Patro. 2020. “A
+Bayesian Framework for Inter-Cellular Information Sharing Improves
+dscRNA-Seq Quantification.” *Bioinformatics* 36 (Supplement\_1):
+i292–99. <https://doi.org/10.1093/bioinformatics/btaa450>.
+
+Yunshun Chen , Aaron Lun, Davis McCarthy , Xiaobei Zhou , Mark Robinson,
+Gordon Smyth. 2017. “edgeR.” <https://doi.org/10.18129/B9.BIOC.EDGER>.
+
+Zhang, Jing, Lei Xin, Baozhen Shan, Weiwu Chen, Mingjie Xie, Denis Yuen,
+Weiming Zhang, Zefeng Zhang, Gilles A Lajoie, and Bin Ma. 2012. “PEAKS
+DB: De Novo Sequencing Assisted Database Search for Sensitive and
+Accurate Peptide Identification.” *Molecular & Cellular Proteomics* 11
+(4): M111010587.
