@@ -14,9 +14,9 @@ are described below.
 ## Transcript quantification and gene counts
 
 Transcripts were quantified by genomic alignments using HISAT2 (version
-2.2.1) (Kim et al. 2019) and featureCounts (version 2.0.6) (Liao, Smyth,
-and Shi 2013), and by transcript classification using Salmon (version
-1.10.3) (Srivastava et al. 2020).
+2.2.1) \[[1](#ref-kim2019)\] and featureCounts (version 2.0.6)
+\[[2](#ref-liao2013)\], and by transcript classification using Salmon
+(version 1.10.3) \[[3](#ref-srivastava2020)\].
 
 Tables S1-3 contain the gene counts from the HISAT2 alignments estimated
 by featureCounts.
@@ -66,8 +66,7 @@ Salmon Counts Table Information
 ## Differential gene expression with EdgeR
 
 Differential gene expression (DEG) was estimated using EdgeR and default
-settings (Yunshun Chen , Aaron Lun, Davis McCarthy , Xiaobei Zhou , Mark
-Robinson, Gordon Smyth 2017). Results were filtered for common DEG from
+settings \[[4](#ref-edgeR)\]. Results were filtered for common DEG from
 both HISAT2 and Salmon counts
 
 Tables S7-9 contain the edgeR outputs.
@@ -101,7 +100,7 @@ edgeR Table information
 ## Peaks normalised Top 3 peptide intensities
 
 Label free quantification using the Peaks Q module of Peaks Studio
-(Zhang et al. 2012; Lin, He, and Ma 2013) yielding matrices of protein
+\[[5](#ref-zhang2012),[6](#ref-lin2013)\] yielding matrices of protein
 identifications as quantified by their normalised top 3 peptide
 intensities.
 
@@ -129,7 +128,7 @@ Peaks normalised top 3 peptide intensities Table information
 The normalised top 3 peptide intensities were filtered to remove any
 proteins for which there were more than two missing values across the
 samples. Differential protein expression (DEP) was then calculated with
-DEqMS using the default steps (“DEqMS,” n.d.).
+DEqMS using the default steps \[[7](#ref-deqms)\].
 
 Tables S13-15 contain the outputs of DEqMS.
 
@@ -161,7 +160,7 @@ DEqMS Table information
 
 ## Functional analysis with g:Profiler
 
-Functional enrichment analysis used g:Profiler (Kolberg et al. 2020)
+Functional enrichment analysis used g:Profiler \[[8](#ref-kolberg2020)\]
 using default settings for homo sapiens modified to exclude GO
 electronic annotations. Gene ids were used as inputs for DEGs and
 protein ids for DEPs.
@@ -272,38 +271,48 @@ g:Profiler Table information
 
 ## References
 
-“DEqMS.” n.d. <http://bioconductor.org/packages/DEqMS/>.
+<span class="csl-left-margin">1.
+</span><span class="csl-right-inline">Kim D, Paggi JM, Park C, Bennett
+C, Salzberg SL. Graph-based genome alignment and genotyping with HISAT2
+and HISAT-genotype. Nature Biotechnology. 2019;37: 907–915.
+doi:[10.1038/s41587-019-0201-4](https://doi.org/10.1038/s41587-019-0201-4)</span>
 
-Kim, Daehwan, Joseph M. Paggi, Chanhee Park, Christopher Bennett, and
-Steven L. Salzberg. 2019. “Graph-Based Genome Alignment and Genotyping
-with HISAT2 and HISAT-Genotype.” *Nature Biotechnology* 37 (8): 907–15.
-<https://doi.org/10.1038/s41587-019-0201-4>.
+<span class="csl-left-margin">2.
+</span><span class="csl-right-inline">Liao Y, Smyth GK, Shi W.
+featureCounts: an efficient general purpose program for assigning
+sequence reads to genomic features. Bioinformatics. 2013;30: 923–930.
+doi:[10.1093/bioinformatics/btt656](https://doi.org/10.1093/bioinformatics/btt656)</span>
 
-Kolberg, Liis, Uku Raudvere, Ivan Kuzmin, Jaak Vilo, and Hedi Peterson.
-2020. “Gprofiler2 – an R Package for Gene List Functional Enrichment
-Analysis and Namespace Conversion Toolset g:Profiler.” *F1000Research* 9
-(November): 709. <https://doi.org/10.12688/f1000research.24956.2>.
+<span class="csl-left-margin">3.
+</span><span class="csl-right-inline">Srivastava A, Malik L, Sarkar H,
+Patro R. A Bayesian framework for inter-cellular information sharing
+improves dscRNA-seq quantification. Bioinformatics. 2020;36: i292–i299.
+doi:[10.1093/bioinformatics/btaa450](https://doi.org/10.1093/bioinformatics/btaa450)</span>
 
-Liao, Yang, Gordon K. Smyth, and Wei Shi. 2013. “featureCounts: An
-Efficient General Purpose Program for Assigning Sequence Reads to
-Genomic Features.” *Bioinformatics* 30 (7): 923–30.
-<https://doi.org/10.1093/bioinformatics/btt656>.
+<span class="csl-left-margin">4.
+</span><span class="csl-right-inline">Yunshun Chen , Aaron Lun, Davis
+McCarthy , Xiaobei Zhou , Mark Robinson, Gordon Smyth. edgeR. 2017.
+doi:[10.18129/B9.BIOC.EDGER](https://doi.org/10.18129/B9.BIOC.EDGER)</span>
 
-Lin, Hao, Lin He, and Bin Ma. 2013. “A Combinatorial Approach to the
-Peptide Feature Matching Problem for Label-Free Quantification.”
-*Bioinformatics* 29 (14): 1768–75.
-<https://doi.org/10.1093/bioinformatics/btt274>.
+<span class="csl-left-margin">5.
+</span><span class="csl-right-inline">Zhang J, Xin L, Shan B, Chen W,
+Xie M, Yuen D, et al. PEAKS DB: De novo sequencing assisted database
+search for sensitive and accurate peptide identification. Molecular &
+Cellular Proteomics. 2012;11: M111010587. </span>
 
-Srivastava, Avi, Laraib Malik, Hirak Sarkar, and Rob Patro. 2020. “A
-Bayesian Framework for Inter-Cellular Information Sharing Improves
-dscRNA-Seq Quantification.” *Bioinformatics* 36 (Supplement\_1):
-i292–99. <https://doi.org/10.1093/bioinformatics/btaa450>.
+<span class="csl-left-margin">6.
+</span><span class="csl-right-inline">Lin H, He L, Ma B. A combinatorial
+approach to the peptide feature matching problem for label-free
+quantification. Bioinformatics. 2013;29: 1768–1775.
+doi:[10.1093/bioinformatics/btt274](https://doi.org/10.1093/bioinformatics/btt274)</span>
 
-Yunshun Chen , Aaron Lun, Davis McCarthy , Xiaobei Zhou , Mark Robinson,
-Gordon Smyth. 2017. “edgeR.” <https://doi.org/10.18129/B9.BIOC.EDGER>.
+<span class="csl-left-margin">7.
+</span><span class="csl-right-inline">DEqMS. Available:
+<http://bioconductor.org/packages/DEqMS/></span>
 
-Zhang, Jing, Lei Xin, Baozhen Shan, Weiwu Chen, Mingjie Xie, Denis Yuen,
-Weiming Zhang, Zefeng Zhang, Gilles A Lajoie, and Bin Ma. 2012. “PEAKS
-DB: De Novo Sequencing Assisted Database Search for Sensitive and
-Accurate Peptide Identification.” *Molecular & Cellular Proteomics* 11
-(4): M111010587.
+<span class="csl-left-margin">8.
+</span><span class="csl-right-inline">Kolberg L, Raudvere U, Kuzmin I,
+Vilo J, Peterson H. gprofiler2 – an R package for gene list functional
+enrichment analysis and namespace conversion toolset g:Profiler.
+F1000Research. 2020;9: 709.
+doi:[10.12688/f1000research.24956.2](https://doi.org/10.12688/f1000research.24956.2)</span>
