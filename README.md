@@ -3,12 +3,7 @@ Last Updated on 2024-08-15
 
 # Supplementary Material
 
-<figure>
-<a href="https://zenodo.org/doi/10.5281/zenodo.13327662"><img
-src="https://zenodo.org/badge/833711889.svg"
-alt="DOI:10.5281/zenodo.13327662" /></a>
-<figcaption>DOI:10.5281/zenodo.13327662</figcaption>
-</figure>
+[![](https://zenodo.org/badge/833711889.svg)](https://zenodo.org/doi/10.5281/zenodo.13327662)<br>
 
 This repository contains the supplementary tables as `csv` files for:
 **Comparative analysis of transcriptomic and proteomic expression
