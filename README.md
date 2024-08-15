@@ -4,10 +4,9 @@ Last Updated on 2024-08-15
 # Supplementary Material
 
 <figure>
-<img src="https://zenodo.org/doi/10.5281/zenodo.13327662"
-alt="(https://zenodo.org/badge/833711889.svg)" />
-<figcaption
-aria-hidden="true">(https://zenodo.org/badge/833711889.svg)</figcaption>
+<a href="https://zenodo.org/doi/10.5281/zenodo.13327662"><img
+src="https://zenodo.org/badge/833711889.svg" alt="DOI" /></a>
+<figcaption>DOI</figcaption>
 </figure>
 
 This repository contains the supplementary tables as `csv` files for:
