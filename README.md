@@ -1,12 +1,11 @@
 
-Last Updated on 2024-07-25
+Last Updated on 2024-08-15
 
 # Supplementary Material
 
 This repository contains the supplementary tables as `csv` files for:
 **Comparative analysis of transcriptomic and proteomic expression
-reveals distinct molecular signatures between two non-small cell lung
-cancer subtypes**.
+between two non-small cell lung cancer subtypes**.
 
 The column names and contents of the `csv` files in the `tables` folder
 are described below.
