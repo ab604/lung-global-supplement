@@ -5,8 +5,9 @@ Last Updated on 2024-08-15
 
 <figure>
 <a href="https://zenodo.org/doi/10.5281/zenodo.13327662"><img
-src="https://zenodo.org/badge/833711889.svg" alt="DOI" /></a>
-<figcaption>DOI</figcaption>
+src="https://zenodo.org/badge/833711889.svg"
+alt="DOI:10.5281/zenodo.13327662" /></a>
+<figcaption>DOI:10.5281/zenodo.13327662</figcaption>
 </figure>
 
 This repository contains the supplementary tables as `csv` files for:
