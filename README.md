@@ -16,20 +16,20 @@ are described below.
 
 <figure>
 
-<img src="img/deg-scree-pca-plot-2024-07-13.png" alt="Figure S1: Differential gene expression (DEG) PCA scree plots (A)LUSC vs LUAD DEG (B)LUAD vs PMBC DEG (C)LUSC vs PBMC DEG"/>
+<img src="img/deg-scree-pca-plot-2024-09-05.png" alt="Figure S1: Differential gene expression (DEG) PCA scree plots (A)LUSC vs PBMC DEG (B)LUAD vs PMBC DEG (C)LUSC vs LUAD DEG"/>
 
 <figcaption aria-hidden="true">
 <strong>Figure S1</strong> Differential gene expression (DEG) PCA scree
-plots <strong>(A)</strong>LUSC vs LUAD DEG <strong>(B)</strong>LUAD vs
-PMBC DEG <strong>(C)</strong>LUSC vs PBMC DEG
+plots <strong>(A)</strong>LUSC vs PBMC DEG <strong>(B)</strong>LUAD vs
+PMBC DEG <strong>(C)</strong>LUSC vs LUAD DEG
 </figcaption>
 </figure>
 <figure>
-<img src="img/deg-scree-pca-plot-2024-07-13.png" alt="Figure S2 Differential protein expression (DEP) PCA scree plots (A)LUSC vs LUAD DEP (B)LUAD vs NAT DEG (C)LUSC vs NAT DEG"/>
+<img src="img/deg-scree-pca-plot-2024-07-13.png" alt="Figure S2 Differential protein expression (DEP) PCA scree plots (A)LUSC vs NAT DEP (B)LUAD vs NAT DEG (C)LUSC vs LUAD DEP"/>
 <figcaption aria-hidden="true">
-<strong>Figure S12</strong> Differential protein expression (DEP) PCA
-scree plots <strong>(A)</strong>LUSC vs LUAD DEP
-<strong>(B)</strong>LUAD vs NAT DEP <strong>(C)</strong>LUSC vs NAT DEP
+<strong>Figure S2</strong> Differential protein expression (DEP) PCA
+scree plots <strong>(A)</strong>LUSC vs NAT DEP <strong>(B)</strong>LUAD
+vs NAT DEP <strong>(C)</strong>LUSC vs LUAD DEP
 </figcaption>
 </figure>
 
