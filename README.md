@@ -26,7 +26,7 @@ PMBC DEG <strong>(C)</strong> LUSC vs LUAD DEG
 </figure>
 <figure>
 
-<img src="img/deg-scree-pca-plot-2024-07-13.png" alt="Figure S2 Differential protein expression (DEP) PCA scree plots (A)LUSC vs NAT DEP (B)LUAD vs NAT DEG (C)LUSC vs LUAD DEP"/>
+<img src="img/dep-scree-pca-plot-2024-07-13.png" alt="Figure S2 Differential protein expression (DEP) PCA scree plots (A)LUSC vs NAT DEP (B)LUAD vs NAT DEG (C)LUSC vs LUAD DEP"/>
 
 <figcaption aria-hidden="true">
 <strong>Figure S2</strong> Differential protein expression (DEP) PCA
