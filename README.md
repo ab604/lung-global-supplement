@@ -1,5 +1,5 @@
 
-Last Updated on 2024-08-15
+Last Updated on 2024-09-05
 
 # Supplementary Material
 
@@ -11,6 +11,12 @@ between two non-small cell lung cancer subtypes**.
 
 The column names and contents of the `csv` files in the `tables` folder
 are described below.
+
+## Figures S1 and S2: PCA scree plots
+
+<img src="img/deg-scree-pca-plot-2024-07-13.png" width="3543" />
+
+<img src="img/dep-scree-pca-plot-2024-07-13.png" width="3543" />
 
 ## Transcript quantification and gene counts
 
