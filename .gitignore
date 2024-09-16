@@ -6,4 +6,4 @@ draft.qmd
 convert_md.sh
 *.bib
 *.csl
-
+*.docx
