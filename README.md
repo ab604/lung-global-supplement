@@ -1,39 +1,131 @@
+# Supplementary Information
 
-Last Updated on 2024-09-05
-
-# Supplementary Material
+Last Updated on 2024-11-23
 
 [![](https://zenodo.org/badge/833711889.svg)](https://zenodo.org/doi/10.5281/zenodo.13327662)<br>
 
-This repository contains the supplementary tables as `csv` files for:
-**Comparative analysis of transcriptomic and proteomic expression
-between two non-small cell lung cancer subtypes**.
+This repository contains the supplementary figures and tables as `csv` files for: 
+**Comparative analysis of transcriptomic and proteomic expression between two non-small cell lung cancer subtypes**.
 
-The column names and contents of the `csv` files in the `tables` folder
+The column names and contents of the `csv` files in the `tables` folder 
 are described below.
 
-## Figures S1 and S2: PCA scree plots
+Column names and contents of the `csv` files in the `tables` folder are
+described below.
 
-<figure>
+## PCA bi-plots of NSCLC subtpyes PBMC and NAT comparisons
 
-<img src="img/deg-scree-pca-plot-2024-09-05.png" alt="Figure S1: Differential gene expression (DEG) PCA scree plots (A) LUSC vs PBMC DEG (B) LUAD vs PMBC DEG (C) LUSC vs LUAD DEG"/>
+<div id="fig-lusc-pca">
 
-<figcaption aria-hidden="true">
-<strong>Figure S1</strong> Differential gene expression (DEG) PCA scree
-plots <strong>(A)</strong> LUSC vs PBMC DEG <strong>(B)</strong> LUAD vs
-PMBC DEG <strong>(C)</strong> LUSC vs LUAD DEG
-</figcaption>
-</figure>
-<figure>
+![](img/fig-S01-pca-2024-11-22.png)
 
-<img src="img/dep-scree-pca-plot-2024-07-13.png" alt="Figure S2 Differential protein expression (DEP) PCA scree plots (A)LUSC vs NAT DEP (B)LUAD vs NAT DEG (C)LUSC vs LUAD DEP"/>
 
-<figcaption aria-hidden="true">
-<strong>Figure S2</strong> Differential protein expression (DEP) PCA
-scree plots <strong>(A)</strong> LUSC vs NAT DEP <strong>(B)</strong>
-LUAD vs NAT DEP <strong>(C)</strong> LUSC vs LUAD DEP
-</figcaption>
-</figure>
+Figure 1: Bi-plots of the LUSC and PBMC and NAT comparison. **(A)** PCA
+of normalised gene count matrix numbered with donor identifier. LUSC
+(blue) & PBMC (grey). **(B)** PCA of normalised gene count matrix with
+the genes contributing to the PC directions annotated. **(C)** PCA of
+normalised top 3 peptide intensities numbered with donor identifier.
+LUSC (light blue) & NAT (grey). **(D)** PCA of normalised top 3 peptide
+intensities with the protein contributing to the PC directions
+annotated.
+
+</div>
+<div id="fig-luad-pca">
+
+![](img/fig-S02-pca-2024-11-22.png)
+
+
+Figure 2: Bi-plots of the LUAD and PBMC and NAT comparison. **(A)** PCA
+of normalised gene count matrix numbered with donor identifier. LUAD
+(red) & PBMC (grey). **(B)** PCA of normalised gene count matrix with
+the genes contributing to the PC directions annotated. **(C)** PCA of
+normalised top 3 peptide intensities numbered with donor identifier.
+LUAD (purple) & NAT (grey). **(D)** PCA of normalised top 3 peptide
+intensities with the protein contributing to the PC directions
+annotated.
+
+</div>
+
+## Volcano plots of NSCLC subtpyes PBMC and NAT comparisons
+
+<div id="fig-lusc-vol">
+
+![](img/fig-S03-sq-volcano-2024-11-22.png)
+
+
+Figure 3: **(A)** Comparison of LUSC & PBMC (n=17,719). Thresholds are
+represented by dotted lines at FDR of 1% and log<sub>2</sub> fold change
+of 1.5. **(B)** Comparison of LUSC & NAT (n=1,330). Thresholds are
+represented by dotted lines at p-value of 1% and log<sub>2</sub> fold
+change of 1.
+
+</div>
+<div id="fig-luad-vol">
+
+![](img/fig-S04-ad-volcano-2024-11-22.png)
+
+
+Figure 4: **(A)** Comparison of LUAD & PBMC (n=17,586). Thresholds are
+represented by dotted lines at FDR of 1% and log<sub>2</sub> fold change
+of 1.5. **(B)** Comparison of LUAD & NAT (n=1,478). Thresholds are
+represented by dotted lines at p-value of 1% and log<sub>2</sub> fold
+change of 1.
+
+</div>
+
+## Heatmaps of NSCLC DEGs and DEPs
+
+<div id="fig-nsclc-hmp">
+
+![](img/fig-S05-nsclc-heatmap-2024-11-23.png)
+
+
+Figure 5: **(A)** Comparison of LUSC & LUAD DEGs below a FDR of 1%.
+(n=428). **(B)** Comparison of LUSC & LUAD DEPs below a p-value 1%
+(n=139). Colour bar shows log<sub>2</sub> fold change rescaled as
+z-scores i.e. each unit from zero represents one standard deviation from
+the row average value for each protein.
+
+</div>
+<div id="fig-lusc-hmp">
+
+![](img/fig-S06-sq-vs-nat-heatmap-2024-11-23.png)
+
+
+Figure 6: **(A)** Comparison of LUSC & PBMC DEGs below a FDR of 1%.
+(n=8,089). **(B)** Comparison of LUSC & NAT DEPs below a p-value 1%
+(n=379). Colour bar shows log<sub>2</sub> fold change rescaled as
+z-scores i.e. each unit from zero represents one standard deviation from
+the row average value for each protein.
+
+</div>
+<div id="fig-luad-hmp">
+
+![](img/fig-S07-ad-heatmap-2024-11-23.png)
+
+
+Figure 7: **(A)** Comparison of LUAD & PBMC DEGs below a FDR of 1%.
+(n=10,058). **(B)** Comparison of LUAD & NAT DEPs below a p-value 1%
+(n=234). Colour bar shows log<sub>2</sub> fold change rescaled as
+z-scores i.e. each unit from zero represents one standard deviation from
+the row average value for each protein.
+
+</div>
+
+## Functional analysis of NSCLC subtpyes PBMC and NAT comparisons
+
+<div id="fig-func">
+
+![](img/fig-S08-nsclc-vs-norm-functional-analysis-plot-2024-11-23.png)
+
+
+Figure 8: Bar plots of functional enrichment between NSCLC subtypes and
+PBMC and NAT. Statistical significance level indicated by the
+-log<sub>10</sub> p-value on the x-axis. **(A)** GO biological processes
+enriched in NSCLC subtypes. **(B)** Reactome pathways enriched in NSCLC
+subtypes.
+
+</div>
 
 ## Transcript quantification and gene counts
 
@@ -47,6 +139,12 @@ Transcripts were quantified by genomic alignments using HISAT2 (version
 Tables S1-3 contain the gene counts from the HISAT2 alignments estimated
 by featureCounts.
 
+<div id="tbl-hisat">
+
+Table 1
+
+<div class="cell-output-display">
+
                      File                                    
                    ──────────────────────────────────────────
                      Table-S1-Hisat-LUAD-vs-PBMC-counts.csv  
@@ -56,8 +154,12 @@ by featureCounts.
 
 Column names: File
 
+</div>
+
+</div>
+
 | Column name | Description |
-|--------------------------------------------------|----------------------|
+|----|----|
 | `name` | Ensembl gene identifier |
 | `gene` | HGNC gene symbol |
 | `sample_id` the donor id or donor id suffixed with `T` for tumour or `N` for PBMC samples. | mapped read counts from featureCounts |
@@ -69,6 +171,12 @@ HISAT2 Counts Tables Information
 Tables S4-6 contain the gene counts from transcript classification by
 Salmon.
 
+<div id="tbl-samlon">
+
+Table 2
+
+<div class="cell-output-display">
+
                     File                                     
                   ───────────────────────────────────────────
                     Table-S4-Salmon-LUAD-vs-PBMC-counts.csv  
@@ -78,8 +186,12 @@ Salmon.
 
 Column names: File
 
+</div>
+
+</div>
+
 | Column name | Description |
-|-------------------------------------------------|-----------------------|
+|----|----|
 | `name` | Ensembl gene identifier |
 | `gene` | HGNC gene symbol or Ensembl if missing |
 | `length` | the length of the target transcript |
@@ -95,6 +207,12 @@ both HISAT2 and Salmon counts
 
 Tables S7-9 contain the edgeR outputs.
 
+<div id="tbl-edger">
+
+Table 3
+
+<div class="cell-output-display">
+
                       File                                 
                     ───────────────────────────────────────
                       Table-S7-edgeR-DEG-LUAD-vs-PBMC.csv  
@@ -104,8 +222,12 @@ Tables S7-9 contain the edgeR outputs.
 
 Column names: File
 
+</div>
+
+</div>
+
 | Column name | Description |
-|-------------------------------------------------|-----------------------|
+|----|----|
 | `name` | Ensembl gene identifier |
 | `gene` | HGNC gene symbol or Ensembl if missing |
 | `baseMean` | mean read counts |
@@ -117,7 +239,7 @@ Column names: File
 | `PAdj` | Benjamini-Hochbergadjusted p-value |
 | `FDR` | False discovery rate |
 | `falsePos` | false discovery counts |
-| `sample_id` the donor id or donor id suffixed with `T` for tumour or `N` for PBMC samples. | sample Hisat2 read count |
+| `sample_id` the donor id or donor id suffixed with `T` for tumour or `N` for PBMC samples. | sample HISAT2 read count |
 
 edgeR Table information
 
@@ -130,6 +252,12 @@ intensities.
 
 Tables S10-12 contain normalised top 3 peptide intensities.
 
+<div id="tbl-peaks">
+
+Table 4
+
+<div class="cell-output-display">
+
            File                                                        
          ──────────────────────────────────────────────────────────────
            Table-S10-Peaks-top3-peptides-intensities-LUAD-vs-NAT.csv   
@@ -139,13 +267,17 @@ Tables S10-12 contain normalised top 3 peptide intensities.
 
 Column names: File
 
+</div>
+
+</div>
+
 | Column name | Description |
-|-----------------------------------------------|-------------------------|
+|----|----|
 | `protein` | protein short name |
 | `gene` | HGNC gene symbol |
 | `sample_id` the donor id or donor id suffixed with `T` for tumour or `N` for NAT samples | Normalised top 3 peptide intensity from Peaks |
 
-Peaks normalised top 3 peptide intensities Table information
+Peaks normalised Top 3 peptide intensities Table information
 
 ## Differential protein expression with DEqMS
 
@@ -156,6 +288,12 @@ DEqMS using the default steps \[[7](#ref-deqms)\].
 
 Tables S13-15 contain the outputs of DEqMS.
 
+<div id="tbl-deqms">
+
+Table 5
+
+<div class="cell-output-display">
+
                       File                                  
                     ────────────────────────────────────────
                       Table-S13-DEqMS-DEP-LUAD-vs-NAT.csv   
@@ -164,6 +302,10 @@ Tables S13-15 contain the outputs of DEqMS.
                     ────────────────────────────────────────
 
 Column names: File
+
+</div>
+
+</div>
 
 | Column name    | Description                                    |
 |----------------|------------------------------------------------|
@@ -191,6 +333,12 @@ protein ids for DEPs.
 
 Tables S16-23 contain the g:Profiler outputs.
 
+<div id="tbl-gprofiler">
+
+Table 6
+
+<div class="cell-output-display">
+
                     File                                      
                   ────────────────────────────────────────────
                     Table-S16-gprofiler-DEG-LUAD-vs-PBMC.csv  
@@ -204,6 +352,10 @@ Tables S16-23 contain the g:Profiler outputs.
                   ────────────────────────────────────────────
 
 Column names: File
+
+</div>
+
+</div>
 
 <table>
 <caption>g:Profiler Table information</caption>
@@ -295,11 +447,19 @@ g:Profiler Table information
 
 ## References
 
+<div id="refs" class="references csl-bib-body">
+
+<div id="ref-kim2019" class="csl-entry">
+
 <span class="csl-left-margin">1.
 </span><span class="csl-right-inline">Kim D, Paggi JM, Park C, Bennett
 C, Salzberg SL. Graph-based genome alignment and genotyping with HISAT2
 and HISAT-genotype. Nature Biotechnology. 2019;37: 907–915.
 doi:[10.1038/s41587-019-0201-4](https://doi.org/10.1038/s41587-019-0201-4)</span>
+
+</div>
+
+<div id="ref-liao2013" class="csl-entry">
 
 <span class="csl-left-margin">2.
 </span><span class="csl-right-inline">Liao Y, Smyth GK, Shi W.
@@ -307,16 +467,28 @@ featureCounts: an efficient general purpose program for assigning
 sequence reads to genomic features. Bioinformatics. 2013;30: 923–930.
 doi:[10.1093/bioinformatics/btt656](https://doi.org/10.1093/bioinformatics/btt656)</span>
 
+</div>
+
+<div id="ref-srivastava2020" class="csl-entry">
+
 <span class="csl-left-margin">3.
 </span><span class="csl-right-inline">Srivastava A, Malik L, Sarkar H,
 Patro R. A Bayesian framework for inter-cellular information sharing
 improves dscRNA-seq quantification. Bioinformatics. 2020;36: i292–i299.
 doi:[10.1093/bioinformatics/btaa450](https://doi.org/10.1093/bioinformatics/btaa450)</span>
 
+</div>
+
+<div id="ref-edgeR" class="csl-entry">
+
 <span class="csl-left-margin">4.
 </span><span class="csl-right-inline">Yunshun Chen , Aaron Lun, Davis
 McCarthy , Xiaobei Zhou , Mark Robinson, Gordon Smyth. edgeR. 2017.
 doi:[10.18129/B9.BIOC.EDGER](https://doi.org/10.18129/B9.BIOC.EDGER)</span>
+
+</div>
+
+<div id="ref-zhang2012" class="csl-entry">
 
 <span class="csl-left-margin">5.
 </span><span class="csl-right-inline">Zhang J, Xin L, Shan B, Chen W,
@@ -324,15 +496,27 @@ Xie M, Yuen D, et al. PEAKS DB: De novo sequencing assisted database
 search for sensitive and accurate peptide identification. Molecular &
 Cellular Proteomics. 2012;11: M111010587. </span>
 
+</div>
+
+<div id="ref-lin2013" class="csl-entry">
+
 <span class="csl-left-margin">6.
 </span><span class="csl-right-inline">Lin H, He L, Ma B. A combinatorial
 approach to the peptide feature matching problem for label-free
 quantification. Bioinformatics. 2013;29: 1768–1775.
 doi:[10.1093/bioinformatics/btt274](https://doi.org/10.1093/bioinformatics/btt274)</span>
 
+</div>
+
+<div id="ref-deqms" class="csl-entry">
+
 <span class="csl-left-margin">7.
 </span><span class="csl-right-inline">DEqMS. Available:
 <http://bioconductor.org/packages/DEqMS/></span>
+
+</div>
+
+<div id="ref-kolberg2020" class="csl-entry">
 
 <span class="csl-left-margin">8.
 </span><span class="csl-right-inline">Kolberg L, Raudvere U, Kuzmin I,
@@ -340,3 +524,7 @@ Vilo J, Peterson H. gprofiler2 – an R package for gene list functional
 enrichment analysis and namespace conversion toolset g:Profiler.
 F1000Research. 2020;9: 709.
 doi:[10.12688/f1000research.24956.2](https://doi.org/10.12688/f1000research.24956.2)</span>
+
+</div>
+
+</div>

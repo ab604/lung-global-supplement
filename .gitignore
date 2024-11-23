@@ -7,3 +7,4 @@ convert_md.sh
 *.bib
 *.csl
 *.docx
+old/
