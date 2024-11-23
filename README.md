@@ -10,9 +10,6 @@ This repository contains the supplementary figures and tables as `csv` files for
 The column names and contents of the `csv` files in the `tables` folder 
 are described below.
 
-Column names and contents of the `csv` files in the `tables` folder are
-described below.
-
 ## PCA bi-plots of NSCLC subtpyes PBMC and NAT comparisons
 
 <div id="fig-lusc-pca">
@@ -20,7 +17,7 @@ described below.
 ![](img/fig-S01-pca-2024-11-22.png)
 
 
-Figure 1: Bi-plots of the LUSC and PBMC and NAT comparison. **(A)** PCA
+Figure S1: Bi-plots of the LUSC and PBMC and NAT comparison. **(A)** PCA
 of normalised gene count matrix numbered with donor identifier. LUSC
 (blue) & PBMC (grey). **(B)** PCA of normalised gene count matrix with
 the genes contributing to the PC directions annotated. **(C)** PCA of
@@ -35,7 +32,7 @@ annotated.
 ![](img/fig-S02-pca-2024-11-22.png)
 
 
-Figure 2: Bi-plots of the LUAD and PBMC and NAT comparison. **(A)** PCA
+Figure S2: Bi-plots of the LUAD and PBMC and NAT comparison. **(A)** PCA
 of normalised gene count matrix numbered with donor identifier. LUAD
 (red) & PBMC (grey). **(B)** PCA of normalised gene count matrix with
 the genes contributing to the PC directions annotated. **(C)** PCA of
@@ -53,7 +50,7 @@ annotated.
 ![](img/fig-S03-sq-volcano-2024-11-22.png)
 
 
-Figure 3: **(A)** Comparison of LUSC & PBMC (n=17,719). Thresholds are
+Figure S3: **(A)** Comparison of LUSC & PBMC (n=17,719). Thresholds are
 represented by dotted lines at FDR of 1% and log<sub>2</sub> fold change
 of 1.5. **(B)** Comparison of LUSC & NAT (n=1,330). Thresholds are
 represented by dotted lines at p-value of 1% and log<sub>2</sub> fold
@@ -65,7 +62,7 @@ change of 1.
 ![](img/fig-S04-ad-volcano-2024-11-22.png)
 
 
-Figure 4: **(A)** Comparison of LUAD & PBMC (n=17,586). Thresholds are
+Figure S4: **(A)** Comparison of LUAD & PBMC (n=17,586). Thresholds are
 represented by dotted lines at FDR of 1% and log<sub>2</sub> fold change
 of 1.5. **(B)** Comparison of LUAD & NAT (n=1,478). Thresholds are
 represented by dotted lines at p-value of 1% and log<sub>2</sub> fold
@@ -80,7 +77,7 @@ change of 1.
 ![](img/fig-S05-nsclc-heatmap-2024-11-23.png)
 
 
-Figure 5: **(A)** Comparison of LUSC & LUAD DEGs below a FDR of 1%.
+Figure S5: **(A)** Comparison of LUSC & LUAD DEGs below a FDR of 1%.
 (n=428). **(B)** Comparison of LUSC & LUAD DEPs below a p-value 1%
 (n=139). Colour bar shows log<sub>2</sub> fold change rescaled as
 z-scores i.e. each unit from zero represents one standard deviation from
@@ -92,7 +89,7 @@ the row average value for each protein.
 ![](img/fig-S06-sq-vs-nat-heatmap-2024-11-23.png)
 
 
-Figure 6: **(A)** Comparison of LUSC & PBMC DEGs below a FDR of 1%.
+Figure S6: **(A)** Comparison of LUSC & PBMC DEGs below a FDR of 1%.
 (n=8,089). **(B)** Comparison of LUSC & NAT DEPs below a p-value 1%
 (n=379). Colour bar shows log<sub>2</sub> fold change rescaled as
 z-scores i.e. each unit from zero represents one standard deviation from
@@ -104,7 +101,7 @@ the row average value for each protein.
 ![](img/fig-S07-ad-heatmap-2024-11-23.png)
 
 
-Figure 7: **(A)** Comparison of LUAD & PBMC DEGs below a FDR of 1%.
+Figure S7: **(A)** Comparison of LUAD & PBMC DEGs below a FDR of 1%.
 (n=10,058). **(B)** Comparison of LUAD & NAT DEPs below a p-value 1%
 (n=234). Colour bar shows log<sub>2</sub> fold change rescaled as
 z-scores i.e. each unit from zero represents one standard deviation from
@@ -119,7 +116,7 @@ the row average value for each protein.
 ![](img/fig-S08-nsclc-vs-norm-functional-analysis-plot-2024-11-23.png)
 
 
-Figure 8: Bar plots of functional enrichment between NSCLC subtypes and
+Figure S8: Bar plots of functional enrichment between NSCLC subtypes and
 PBMC and NAT. Statistical significance level indicated by the
 -log<sub>10</sub> p-value on the x-axis. **(A)** GO biological processes
 enriched in NSCLC subtypes. **(B)** Reactome pathways enriched in NSCLC
