@@ -8,3 +8,4 @@ convert_md.sh
 *.csl
 *.docx
 old/
+*.html

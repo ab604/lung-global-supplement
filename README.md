@@ -1,16 +1,34 @@
 # Supplementary Information
 
-Last Updated on 2024-11-23
+Last Updated on 2024-12-05
 
 [![](https://zenodo.org/badge/833711889.svg)](https://zenodo.org/doi/10.5281/zenodo.13327662)<br>
 
-This repository contains the supplementary figures and tables as `csv` files for: 
+This repository contains the supporting figures and tables for: 
 **Comparative analysis of transcriptomic and proteomic expression between two non-small cell lung cancer subtypes**.
 
-The column names and contents of the `csv` files in the `tables` folder 
-are described below.
+The supporting tables are `csv` files in the `tables` folder. The column names and contents of the `csv` files  
+are described in Tables 1-6 below.
 
-## PCA bi-plots of NSCLC subtpyes PBMC and NAT comparisons
+## Table of contents
+
+### Supporting Figures
+
+-   Figures S1 and S2: [PCA bi-plots of NSCLC subtypes PBMC and NAT comparisons](#pca-bi-plots-of-nsclc-subtypes-pbmc-and-nat-comparisons)
+-   Figures S3 and S4: [Volcano plots of NSCLC subtypes PBMC and NAT comparisons.](#volcano-plots-of-nsclc-subtypes-pbmc-and-nat-comparisons)
+-   Figures S5 to S7: [Heatmaps of NSCLC DEGs and DEPs.](#heatmaps-of-nsclc-degs-and-deps)
+-   Figure S8: [Bar plots of functional enrichment between NSCLC subtypes and PBMC and NAT.](#functional-analysis-of-nsclc-subtypes-pbmc-and-nat-comparisons)
+
+### Tables
+
+-   [Gene counts from the HISAT2 alignments estimated by featureCounts.](#hisat2)
+-   [Gene counts from transcript classification by Salmon.](#salmon)
+-   [Differential gene expression edgeR outputs.](#differential-gene-expression-with-edger)
+-   [Peaks normalised top 3 peptide intensities.](#peaks-normalised-top-3-peptide-intensities)
+-   [Differential protein expression DEqMS outputs.](#differential-protein-expression-with-deqms)
+-   [Functional enrichment analysis g:Profiler outputs.](#functional-analysis-with-gprofiler)
+
+## PCA bi-plots of NSCLC subtypes PBMC and NAT comparisons
 
 <div id="fig-lusc-pca">
 
@@ -43,7 +61,7 @@ annotated.
 
 </div>
 
-## Volcano plots of NSCLC subtpyes PBMC and NAT comparisons
+## Volcano plots of NSCLC subtypes PBMC and NAT comparisons
 
 <div id="fig-lusc-vol">
 
@@ -109,7 +127,7 @@ the row average value for each protein.
 
 </div>
 
-## Functional analysis of NSCLC subtpyes PBMC and NAT comparisons
+## Functional analysis of NSCLC subtypes PBMC and NAT comparisons
 
 <div id="fig-func">
 
