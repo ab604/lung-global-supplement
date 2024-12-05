@@ -1,4 +1,4 @@
-# Supplementary Information
+# Supporting Information
 
 Last Updated on 2024-12-05
 
