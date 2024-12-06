@@ -341,12 +341,13 @@ DEqMS Table information
 
 ## Functional analysis with g:Profiler
 
-Functional enrichment analysis used g:Profiler \[[8](#ref-kolberg2020)\]
-using default settings for homo sapiens modified to exclude GO
-electronic annotations. Gene ids were used as inputs for DEGs and
-protein ids for DEPs.
+Functional enrichment analysis used g:Profiler \[[8](#ref-kolberg2020)\] using G:OSt `multi_query` in default settings for homo sapiens modified to exclude GO electronic annotations. Gene ids were used as inputs for DEGs and protein ids for DEPs.
 
-Tables S16-23 contain the g:Profiler outputs.
+We used four lists as inputs to the multiple query setting for G:OSt for comparing NSCLC subtypes for DEGs filtered at thresholds 5% FDR and logFC 1.5 and DEPs filtered p-val 5% and logFC 1 for protein expression. The identifiers for each list are `LUAD Genes`: LUAD DEGs, `LUAD Proteins`: LUAD DEPs, `LUSC Genes` : LUSC DEGs, `LUSC Proteins`: LUSC DEPs.
+
+The four lists for comparison of NSCLC subtypes with PBMC were NSCLC DEGs filtered at 1% FDR and logFC 1.5 and NSCLC DEPs 5% FDR and logFC of 1 for NAT comparison. The list identifiers are as for NSCLC subtype comparison.
+
+Table S16 contain the g:Profiler outputs for the NSCLC comparisons and Table S17 the NSCLC and PBMC/NAT comparisons.
 
 <div id="tbl-gprofiler">
 
@@ -368,95 +369,21 @@ Table 6
 
 Column names: File
 
-</div>
+| Column name | Description |
+|------------------|--------------------------------------------------------|
+| `term_id` | unique term identifier |
+| `p_values` | hypergeometric p-value after correction for multiple testing |
+| `significant` | indicator for statistically significant results |
+| `term_size` | number of genes that are annotated to the term |
+| `query_sizes` | number of genes that were included in the query |
+| `intersection_sizes` | the number of genes in the input query that are annotated to the corresponding term |
+| `source` | the abbreviation of the data source for the term (e.g. GO:BP) |
+| `term_name` | the ontology term name |
+| `effective_domain_size` | the total number of genes "in the universe" used for the hypergeometric test |
+| `source_order` | numeric order for the term within its data source |
+| `parents` | list of term IDs that are hierarchically directly above the term. For non-hierarchical data sources this points to an artificial root node. |
+| `id` | The identifier of for the input list associated with the row e.g. `LUAD Genes` were the list of LUAD DEGs. |
 
-</div>
-
-<table>
-<caption>g:Profiler Table information</caption>
-<colgroup>
-<col style="width: 15%" />
-<col style="width: 84%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Column name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>query</code></td>
-<td>the name of the input query</td>
-</tr>
-<tr class="even">
-<td><code>significant</code></td>
-<td>indicator for statistically significant results</td>
-</tr>
-<tr class="odd">
-<td><code>p_value</code></td>
-<td>hypergeometric p-value after correction for multiple testing</td>
-</tr>
-<tr class="even">
-<td><code>term_size</code></td>
-<td>number of genes that are annotated to the term</td>
-</tr>
-<tr class="odd">
-<td><code>query_size</code></td>
-<td>number of genes that were included in the query</td>
-</tr>
-<tr class="even">
-<td><code>intersection_size</code></td>
-<td>the number of genes in the input query that are annotated to the
-corresponding term</td>
-</tr>
-<tr class="odd">
-<td><code>precision</code></td>
-<td>the proportion of genes in the input list that are annotated to the
-function (defined as intersection_size/query_size)</td>
-</tr>
-<tr class="even">
-<td><code>recall</code></td>
-<td>the proportion of functionally annotated genes that the query
-recovers (defined as intersection_size/term_size)</td>
-</tr>
-<tr class="odd">
-<td><code>term_id</code></td>
-<td>unique term identifier</td>
-</tr>
-<tr class="even">
-<td><p><code>source</code></p>
-<p><code>term_name</code></p></td>
-<td>the abbreviation of the data source for the term (e.g. GO:BP)</td>
-</tr>
-<tr class="odd">
-<td><code>effective_domain_size</code></td>
-<td>the total number of genes “in the universe” used for the
-hypergeometric test</td>
-</tr>
-<tr class="even">
-<td><code>source_order</code></td>
-<td>numeric order for the term within its data source</td>
-</tr>
-<tr class="odd">
-<td><code>parents</code></td>
-<td>list of term IDs that are hierarchically directly above the term.
-For non-hierarchical data sources this points to an artificial root
-node.</td>
-</tr>
-<tr class="even">
-<td><code>evidence_codes</code></td>
-<td>a lists of all evidence codes for the intersecting genes between
-input and the term. The evidences are separated by comma for each
-gene.</td>
-</tr>
-<tr class="odd">
-<td><code>intersection</code></td>
-<td>a comma separated list of genes from the query that are annotated to
-the corresponding term</td>
-</tr>
-</tbody>
-</table>
 
 g:Profiler Table information
 
