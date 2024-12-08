@@ -1,6 +1,6 @@
 # Supporting Information
 
-Last Updated on 2024-12-05
+Last Updated on 2024-12-08
 
 [![](https://zenodo.org/badge/833711889.svg)](https://zenodo.org/doi/10.5281/zenodo.13327662)<br>
 
@@ -357,14 +357,8 @@ Table 6
 
                     File                                      
                   ────────────────────────────────────────────
-                    Table-S16-gprofiler-DEG-LUAD-vs-PBMC.csv  
-                    Table-S17-gprofiler-DEG-LUSC-vs-PBMC.csv  
-                    Table-S18-gprofiler-DEG-LUAD-vs-LUSC.csv  
-                    Table-S19-gprofiler-DEG-LUSC-vs-LUAD.csv  
-                    Table-S20-gprofiler-DEP-LUAD-vs-NAT.csv   
-                    Table-S21-gprofiler-DEP-LUSC-vs-NAT.csv   
-                    Table-S22-gprofiler-DEP-LUAD-vs-LUSC.csv  
-                    Table-S23-gprofiler-DEP-LUSC-vs-LUAD.csv  
+                    Table-S16-gprofiler-DEG-LUSC-vs-LUAD.csv  
+                    Table-S17-gprofiler-DEG-NSCLC-vs-NORM.csv  
                   ────────────────────────────────────────────
 
 Column names: File
