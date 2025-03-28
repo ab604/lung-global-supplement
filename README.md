@@ -5,7 +5,7 @@ Last Updated on 2024-12-08
 [![](https://zenodo.org/badge/833711889.svg)](https://zenodo.org/doi/10.5281/zenodo.13327662)<br>
 
 This repository contains the supporting figures and tables for: 
-**Comparative analysis of transcriptomic and proteomic expression between two non-small cell lung cancer subtypes**.
+**Comparative analysis of transcriptomic and proteomic expression between two non-small cell lung cancer subtypes**: https://doi.org/10.1021/acs.jproteome.4c00773 
 
 The supporting tables are `csv` files in the `tables` folder. The column names and contents of the `csv` files  
 are described in Tables 1-6 below.
